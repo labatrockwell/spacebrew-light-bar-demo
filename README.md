@@ -1,0 +1,1 @@
+This repo contains the code for the Spacebrew LED Bar demo. This is straight from the tutorial posted (here on the spacebrew.cc site)[http://docs.spacebrew.cc/tutorials/2012/11/27/adafruit-digital-addressable-strip]
