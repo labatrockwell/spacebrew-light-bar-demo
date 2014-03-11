@@ -1,5 +1,6 @@
 import spacebrew.*;
 import processing.serial.*;
+import com.rockwellgroup.arduinoconnect.*;
  
 Serial port;
 Spacebrew spacebrewConnection;
@@ -22,7 +23,8 @@ spacebrewConnection.addSubscribe( "bar height", "range" );
 spacebrewConnection.connect(server, name, description );
 println("Available serial ports:");
 println(Serial.list());
-port = new Serial(this, Serial.list()[10], 9600); // make sure port number is correct
+//port = new Serial(this, Serial.list()[10], 9600); // make sure port number is correct
+port = new Serial(this, ArduinoConnect.getSerialPortName("74134373733351500000"), 9600);
 port.bufferUntil('\n');
 }
  
